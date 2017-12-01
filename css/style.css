@@ -1,0 +1,62 @@
+body {
+    background-color: #dadada;
+    color: #444;
+}
+
+h1,h2, h3, h4 {
+    color: #222;
+}
+
+nav {
+    background-color: #0084ec;
+    padding: 1em;
+    margin: 1em 0 2em 0;
+    border-radius: 0 50px 50px 0;
+    border: solid #FFF;
+    border-width: 3px 3px 3px 0;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.56);
+    color: #FFF;
+    width: 90%;
+}
+
+nav > a.navbar-brand {
+    font-family: 'Permanent Marker', cursive;
+    text-transform: uppercase; 
+    font-size: 300%;
+    margin: 0 auto;
+}
+
+ul.navbar-nav {
+    margin: 0 auto;
+    text-align: center;
+}
+
+#content-container h1 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 300%;
+    text-align: right;
+    color: #0084ec;
+}
+
+#content-container img {
+    width: 300px;
+    margin: 0 0 1em 0;
+}
+
+.social-icon {
+    width: 100px;
+}
+
+.losContainers {
+    background-color: #FFF;
+    text-align: center;
+    border: solid #0084ec;
+    border-width: 10px 0 0 0;
+    padding: 1em;
+}
+
+#social-container h2 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 200%;
+    color: #0084ec;
+}
