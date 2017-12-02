@@ -1,3 +1,4 @@
+
 body {
     background-color: #dadada;
     color: #444;
@@ -35,6 +36,7 @@ ul.navbar-nav a {
     text-transform: uppercase;
 }
 
+
 #content-container h1 {
     font-family: 'Permanent Marker', cursive;
     font-size: 300%;
@@ -57,6 +59,7 @@ ul.navbar-nav a {
     border: solid #0084ec;
     border-width: 10px 0 0 0;
     padding: 1em;
+    margin-bottom: 1em;
 }
 
 #social-container h2 {
@@ -68,12 +71,108 @@ ul.navbar-nav a {
 footer {
     background-color: #444;
     border: solid #0084ec;
-    border-width: 12px 0 0 0;
+    border-width: 8px 0 0 0;
     height: 80px;
     color: #FFF;
     text-align: right;
-    padding: 4%;
     font-size: 10px;
-    margin: 2em 0 0 0;
+    padding: 2%; 
+}
 
+.container {
+    min-height: calc(100vh - 100px);
+}
+
+#portfolio-container {
+    padding: 0 0 1em 0;
+}
+.portfolio-item {
+    height: 200px;
+    background-color: teal;
+    margin: 0 auto 1em auto;
+    position: relative;
+    opacity: 0.3;
+    transition: all 1s linear;
+}
+
+.portfolio-item:hover {
+    position: relative;
+    z-index: 2;
+    opacity: 1;
+    transform: scale(1.5);
+}
+
+.portfolio-label {
+    background-color: #FF9A00;
+    padding: 0.3em;
+    position: absolute;
+    width: 100%;
+    top: 65%;
+    color: #FFF;
+}
+
+.p1 {
+    background: teal url('../assets/space01.jpg')  no-repeat;
+    background-size: cover;
+}
+
+.p2 {
+    background: teal url('../assets/space02.jpg') no-repeat;
+    background-size: cover;
+}
+
+.p3 {
+    background: teal url('../assets/space03.jpg') no-repeat;
+    background-size: cover;
+}
+
+.p4 {
+    background: teal url('../assets/jean-paul02.png') center no-repeat;
+    background-size: cover;
+}
+
+.p5 {
+    background: teal url('../assets/space05.jpg') no-repeat;
+    background-size: cover;
+}
+
+form label {
+    display: none;
+}
+
+form input:not([type="submit"]),
+form textarea {
+    display: block;
+    margin: 1em auto 0 auto;
+    width: 90%;
+    border: 3px solid #999;
+    padding: 0.5em 1.5em 0.5em 1.5em;
+    border-radius: 35px;
+    font-size: 16px;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: none;
+}
+
+form textarea {
+    margin-bottom: 1em;
+    height: 150px;
+}
+
+form input[type="submit"] {
+    background-color: #FFF;
+    border: 5px solid #0084EC;
+    padding: 0 1.5em 0 1.5m;
+    border-radius: 35px;
+    font-size: 16px;
+    color: #0084EC;
+    width: 7em;
+    margin: 1em 0 1em 0;
+}
+
+form input[type="submit"]:hover {
+    background-color: #0084EC;
+    color: #FFF;
 }
