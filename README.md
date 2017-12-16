@@ -1,6 +1,11 @@
-# Bootstrap-Portfolio
-## Homework 2 during UCF's Coding Bootcamp: ## 
+# My Portfolio
 
-Creating a basic portfolio using Bootstrap v4.
+Creating my personal portfolio using Bootstrap v4.
 
-Link to the live site: https://jpdevspace.github.io/Bootstrap-Portfolio/
+## See it live here: https://jpdevspace.github.io/Bootstrap-Portfolio/
+
+Technologies used for this project: HTML, CSS (CSS3 animations and Flexbox), Bootstrap v4.
+
+![alt text][screenshot]
+
+[screenshot]: https://github.com/jpdevspace/Bootstrap-Portfolio/blob/master/assets/screenshot.png "Portfolio Screenshot"
