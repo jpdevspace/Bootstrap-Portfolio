@@ -93,19 +93,8 @@ ul.navbar-nav li:hover {
     color: #0084ec;
 }
 
-footer {
-    background-color: #444;
-    border: solid #0084ec;
-    border-width: 8px 0 0 0;
-    height: 80px;
-    color: #FFF;
-    text-align: right;
-    font-size: 10px;
-    padding: 2%; 
-}
-
 .container {
-    min-height: calc(100vh - 100px);
+    margin-top: 5em;
 }
 
 #portfolio-container {
