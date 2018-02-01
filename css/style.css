@@ -1,19 +1,24 @@
 
 body {
-    background-color: #dadada;
+    /* background-color: #dadada; */
     color: #444;
 }
 
-h1,h2, h3, h4 {
+h1, h2, h3, h4 {
     color: #222;
+    font-family: 'Permanent Marker', cursive;
 }
 
+.
+/************************************
+            HEADER
+************************************/
 nav {
     background-color: #0084ec;
     padding: 1em;
     margin: 1em 0 2em 0;
     border-radius: 0 50px 50px 0;
-    border: solid #FFF;
+    /* border: solid #FFF; */
     border-width: 3px 3px 3px 0;
     box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.56);
     color: #FFF;
@@ -57,6 +62,27 @@ ul.navbar-nav li:hover {
     100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
+/************************************
+            ALL SECTIONS
+************************************/
+.container {
+    margin-top: 5em;
+}
+
+.losContainers {
+    /* background-color: #FFF; */
+    text-align: center;
+    border: solid #0084ec;
+    border-width: 10px 0 0 0;
+    padding: 1em;
+    margin-bottom: 1em;
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.45);
+
+}
+
+/************************************
+            SECTION: Bio
+************************************/
 #content-container h1 {
     font-family: 'Permanent Marker', cursive;
     font-size: 300%;
@@ -67,8 +93,12 @@ ul.navbar-nav li:hover {
 #content-container img {
     width: 300px;
     margin: 0 0 1em 0;
+    border-radius: 50%;
 }
 
+/************************************
+            SECTION: Social
+************************************/
 .social-icon {
     width: 100px;
     transition: all 0.5s linear;
@@ -78,27 +108,41 @@ ul.navbar-nav li:hover {
     transform: rotate(45deg);
 }
 
-.losContainers {
-    background-color: #FFF;
-    text-align: center;
-    border: solid #0084ec;
-    border-width: 10px 0 0 0;
-    padding: 1em;
-    margin-bottom: 1em;
-}
-
 #social-container h2 {
     font-family: 'Permanent Marker', cursive;
     font-size: 200%;
     color: #0084ec;
 }
 
-.container {
-    margin-top: 5em;
+/************************************
+        SECTION: Portfolio
+************************************/
+.title-right {
+    background: url('../assets/opcard03.jpg') center no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    border: #FFF;
+    width: 95%;
+    border-width: 3px 0 3px 3px;
+    border-radius: 100px 0 0 100px;
+    right: 0;
+    position: absolute;
+    height: 8em;
+    box-shadow: inset 0px 0px 15px 10px rgba(34, 34, 34, 0.7);
+    padding: 1em;
+    margin-top: 2em;
+}
+
+.title-right h2 {
+    color: #FFF;
+    font-size: 3em;
+    text-shadow: 0 0 5px rgb(0,0,0);
+    padding-top: 0.3em;
+    padding-left: 0.5em;
 }
 
 #portfolio-container {
-    padding: 0 0 1em 0;
+    padding: 10em 0 1em 0;
 }
 .portfolio-item {
     height: 200px;
@@ -106,6 +150,7 @@ ul.navbar-nav li:hover {
     margin: 0 auto 1em auto;
     position: relative;
     opacity: 0.3;
+    border-radius: 5px;
     transition: all 1s linear;
 }
 
@@ -118,6 +163,7 @@ ul.navbar-nav li:hover {
 
 .portfolio-label {
     background-color: #FF9A00;
+    text-align: center;
     padding: 0.3em;
     position: absolute;
     width: 100%;
