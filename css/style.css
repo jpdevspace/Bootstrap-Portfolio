@@ -92,7 +92,8 @@ ul.navbar-nav li:hover {
 }
 
 #content-container img {
-    width: 300px;
+    width: 270px;
+    height: 270px;
     margin: 0 0 1em 0;
     border-radius: 50%;
 }
@@ -250,6 +251,10 @@ footer a {
 footer a:hover {
     color: #b1b1b1;
     text-decoration: none;
+}
+
+footer li {
+    list-style: none;
 }
 
 footer strong {
