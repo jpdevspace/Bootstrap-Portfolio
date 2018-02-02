@@ -1,7 +1,9 @@
 
 body {
     /* background-color: #dadada; */
+    font-family: Nunito;
     color: #444;
+    font-size: 1.2em;
 }
 
 h1, h2, h3, h4 {
@@ -9,15 +11,14 @@ h1, h2, h3, h4 {
     font-family: 'Permanent Marker', cursive;
 }
 
-.
 /************************************
             HEADER
 ************************************/
 nav {
-    background-color: #0084ec;
+    background-color: #444;
     padding: 1em;
-    margin: 1em 0 2em 0;
-    border-radius: 0 50px 50px 0;
+    margin: 1.5em 0 2em 0;
+    border-radius: 0 60px 60px 0;
     /* border: solid #FFF; */
     border-width: 3px 3px 3px 0;
     box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.56);
@@ -72,7 +73,7 @@ ul.navbar-nav li:hover {
 .losContainers {
     /* background-color: #FFF; */
     text-align: center;
-    border: solid #0084ec;
+    border: solid #b1b1b1;
     border-width: 10px 0 0 0;
     padding: 1em;
     margin-bottom: 1em;
@@ -87,7 +88,7 @@ ul.navbar-nav li:hover {
     font-family: 'Permanent Marker', cursive;
     font-size: 300%;
     text-align: right;
-    color: #0084ec;
+    color: #00a797;
 }
 
 #content-container img {
@@ -111,7 +112,7 @@ ul.navbar-nav li:hover {
 #social-container h2 {
     font-family: 'Permanent Marker', cursive;
     font-size: 200%;
-    color: #0084ec;
+    color: #00a797;
 }
 
 /************************************
@@ -144,25 +145,26 @@ ul.navbar-nav li:hover {
 #portfolio-container {
     padding: 10em 0 1em 0;
 }
+
 .portfolio-item {
-    height: 200px;
-    background-color: teal;
+    height: 500px;
     margin: 0 auto 1em auto;
     position: relative;
-    opacity: 0.3;
+    opacity: 1;
     border-radius: 5px;
-    transition: all 1s linear;
+    border: 3px solid #444;
+    transition: all 0.6s linear;
 }
 
 .portfolio-item:hover {
     position: relative;
     z-index: 2;
     opacity: 1;
-    transform: scale(1.5);
+    transform: scale(1.1);
 }
 
 .portfolio-label {
-    background-color: #FF9A00;
+    background-color: #00a797;
     text-align: center;
     padding: 0.3em;
     position: absolute;
@@ -171,68 +173,55 @@ ul.navbar-nav li:hover {
     color: #FFF;
 }
 
+.hidden-text {
+    height: 100%;
+    opacity: 0;
+    background-color: #00a797;
+    padding: 1em;
+    color: #FFF !important;
+    transition: all 1s linear;
+}
+
+.hidden-text > h4 {
+    color: #FFF !important;
+}
+
+.hidden-text:hover {
+    opacity: 1;
+}
+
+.hidden-text > a {
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+}
+
+.hidden-text > a:hover {
+    color: #dedede;
+}
+
 .p1 {
-    background: teal url('../assets/space01.jpg')  no-repeat;
+    background: #FFF url('../assets/groceryshopping.png')  center no-repeat;
     background-size: cover;
 }
 
 .p2 {
-    background: teal url('../assets/space02.jpg') no-repeat;
+    background: #FFF url('../assets/sijui.png') center no-repeat;
     background-size: cover;
 }
 
 .p3 {
-    background: teal url('../assets/space03.jpg') no-repeat;
-    background-size: cover;
+    background: #FFF url('../assets/carMatching.png') center no-repeat;
+    background-size: contain;
 }
 
 .p4 {
-    background: teal url('../assets/jean-paul02.png') center no-repeat;
-    background-size: cover;
+    background: #FFF url('../assets/giftastic.png') center no-repeat;
+    background-size: contain;
 }
 
 .p5 {
-    background: teal url('../assets/space05.jpg') no-repeat;
-    background-size: cover;
+    background: #FFF url('../assets/trainschedule.png') center no-repeat;
+    background-size: contain;
 }
 
-form label {
-    display: none;
-}
-
-form input:not([type="submit"]),
-form textarea {
-    display: block;
-    margin: 1em auto 0 auto;
-    width: 90%;
-    border: 3px solid #999;
-    padding: 0.5em 1.5em 0.5em 1.5em;
-    border-radius: 35px;
-    font-size: 16px;
-}
-
-form input:focus,
-form textarea:focus {
-    outline: none;
-}
-
-form textarea {
-    margin-bottom: 1em;
-    height: 150px;
-}
-
-form input[type="submit"] {
-    background-color: #FFF;
-    border: 5px solid #0084EC;
-    padding: 0 1.5em 0 1.5m;
-    border-radius: 35px;
-    font-size: 16px;
-    color: #0084EC;
-    width: 7em;
-    margin: 1em 0 1em 0;
-}
-
-form input[type="submit"]:hover {
-    background-color: #0084EC;
-    color: #FFF;
-}
