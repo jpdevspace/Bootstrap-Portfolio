@@ -97,6 +97,10 @@ ul.navbar-nav li:hover {
     border-radius: 50%;
 }
 
+#content-container p {
+    padding: 1em;
+}
+
 /************************************
             SECTION: Social
 ************************************/
@@ -152,14 +156,15 @@ ul.navbar-nav li:hover {
     position: relative;
     opacity: 1;
     border-radius: 5px;
-    border: 3px solid #444;
     transition: all 0.6s linear;
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.45);
 }
 
 .portfolio-item:hover {
     position: relative;
     z-index: 2;
     opacity: 1;
+    border: 0;
     transform: scale(1.1);
 }
 
@@ -176,8 +181,8 @@ ul.navbar-nav li:hover {
 .hidden-text {
     height: 100%;
     opacity: 0;
-    background-color: #00a797;
-    padding: 1em;
+    background-color: #b1b1b1;
+    padding: 2em;
     color: #FFF !important;
     transition: all 1s linear;
 }
@@ -190,14 +195,17 @@ ul.navbar-nav li:hover {
     opacity: 1;
 }
 
-.hidden-text > a {
+.hidden-links {
     text-align: center;
+}
+
+.hidden-links > a {
     color: #fff;
     text-decoration: none;
 }
 
-.hidden-text > a:hover {
-    color: #dedede;
+.hidden-links > a:hover {
+    color: #444;
 }
 
 .p1 {
@@ -223,5 +231,37 @@ ul.navbar-nav li:hover {
 .p5 {
     background: #FFF url('../assets/trainschedule.png') center no-repeat;
     background-size: contain;
+}
+
+.p6 {
+    background: #FFF url('../assets/jean-paul02.png') center no-repeat;
+    background-size: cover;
+}
+/************************************
+        SECTION: Footer
+************************************/
+footer,
+footer a {
+    background-color: #444;
+    color: #FFF;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #b1b1b1;
+    text-decoration: none;
+}
+
+footer strong {
+    color: #b1b1b1;
+}
+
+#interests-strip {
+    padding: 1em;
+    background-color: #00a797;
+}
+
+#footer-msg {
+    padding: 1.5em 2em 0.5em 2em;
 }
 
